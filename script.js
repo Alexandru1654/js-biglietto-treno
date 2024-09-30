@@ -18,14 +18,13 @@ else if(age > 65) {
     finalPrice *= 0.6;
 }
 
-const formattedPrice = new let.NumberFormat (
-    `it-IT`, {
-        style: 'currency',
-        currency: `EUR`
-    }).format(finalPrice);
-
-    alert(`${formattedPrice}`)
-
-    'minimumFractionDigits'; 2;
+const formattedPrice = new
+Intl.NumberFormat('it-IT', {
+    style: `currency`,
+    currency: `EUR`,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+}
+).format(finalPrice);
 
 
