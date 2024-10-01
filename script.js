@@ -14,17 +14,11 @@ if (age < 18) {
 }
 
 // age over
-else if(age > 65) {
+else if (age > 65) {
     finalPrice *= 0.6;
 }
 
-const formattedPrice = new
-Intl.NumberFormat('it-IT', {
-    style: `currency`,
-    currency: `EUR`,
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-}
-).format(finalPrice);
+finalPrice = finalPrice.toFixed(2);
 
+console.log(` ${finalPrice}`)
 
